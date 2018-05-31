@@ -1,0 +1,425 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Calibri;
+    overflow: hidden;
+}
+
+.photo {
+    width: 70%;
+    height: 100%;
+    //background: url("../img/login.jpg") center center no-repeat;
+    //background-size: 100%;
+    float: left;
+}
+
+.photo img {
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.nazirlik img {
+    max-width: 75%;
+}
+
+.login{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: #fff;
+}
+
+.login .left{
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+.login .right{
+    /*float: right;*/
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    position: relative;
+}
+
+.login .header_{
+    width: 100%;
+    height: 3%;
+}
+.login .header{
+    width: 100%;
+    height: 14%;
+}
+
+.header .logo{
+    height: 72px;
+    width: 129px;
+}
+
+.logo2{
+    margin: 10px;
+    height: 50px;
+    width:  90px;
+}
+
+.login .loginbox{
+    height: 28%;
+    width: 100%;
+    text-align: center;
+}
+
+.login .loginbox_{
+    height: 30%;
+    width: 100%;
+}
+
+.loginbox_ .error{
+    text-align: center;
+    color: red;
+}
+
+.login .summary{
+    width: 100%;
+    margin-bottom: 20px;
+    /*height: 15%;*/
+    min-height: 100px;
+    position: absolute;
+    bottom: 10%;
+}
+.login .copyright{
+    width: 100%;
+    /*height: 7%;*/
+    position: absolute;
+    bottom: 6%;
+}
+.login .copyright_{
+    width: 100%;
+    height: 3%;
+}
+
+.input{
+    background: none;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    height: 25px;
+    outline: none;
+}
+
+.oval_button {
+    border-radius: 30px;
+    background-color: #f0ce0e;
+    color: white;
+    width: 70px;
+    font-size: 14px;
+    height: 20px;
+    padding-top: 3px;
+    /*padding-left: 14px;
+    padding-right: 14px;*/
+    text-align: center;
+    cursor: pointer;
+}
+
+.oval_button:hover{
+    background-color: #ffe268;
+}
+
+/*farm house login style*/
+.login-wrapper {
+    height: 100%;
+    background-color: #000000;
+}
+
+.login-wrapper > * {
+    height: 100%;
+}
+
+.login-wrapper .bg-pic {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-wrapper .bg-pic > img {
+    height: 100%;
+    opacity: 0.6;
+}
+
+.login-wrapper .login-container {
+    width: 496px;
+    display: block;
+    position: relative;
+    float: right;
+}
+
+.login-wrapper .bg-caption {
+    width: 500px;
+}
+
+.register-container {
+    width: 550px;
+    margin: auto;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .login-wrapper .login-container {
+        width: 100%;
+    }
+
+    .register-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .login-wrapper .login-container {
+        width: 100%;
+    }
+}
+
+.lock-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+.lock-screen-wrapper .credentials {
+    margin-top: -84px;
+    position: absolute;
+    top: 50%;
+}
+
+.lock-screen-wrapper .credentials .thumbnail-wrapper {
+    width: 53px;
+    height: 53px;
+}
+
+.lock-screen-wrapper .credentials .logged {
+    opacity: .21;
+    margin-top: -5px !important;
+}
+
+.lock-screen-wrapper .credentials .name {
+    opacity: .69;
+    margin-top: -5px !important;
+    font-size: 36px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.lock-screen-wrapper .terms-wrapper > div {
+    display: table;
+}
+
+.lock-screen-wrapper .terms-wrapper .terms {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.lock-screen-wrapper .terms-wrapper .logo-terms {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.lock-screen-wrapper .terms-wrapper .logo-terms .brand {
+    left: 50%;
+    margin-left: -21px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+}
+
+@media (max-width: 767px) {
+    .lock-container {
+        width: 80%;
+    }
+
+    .lock-screen-wrapper .credentials form {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lock-screen-wrapper .credentials {
+        margin: 0;
+        position: static;
+        margin-top: 100px;
+        width: 100%;
+        float: left;
+        clear: both;
+    }
+
+    .lock-screen-wrapper .credentials > div {
+        text-align: center;
+    }
+
+    .lock-screen-wrapper .credentials .thumbnail-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+/*second farm house style*/
+.login-wrapper {
+    height: 100%;
+    background-color: #000000;
+}
+
+.login-wrapper > * {
+    height: 100%;
+}
+
+.login-wrapper .bg-pic {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-wrapper .bg-pic > img {
+    height: 100%;
+    opacity: 0.6;
+}
+
+.login-wrapper .login-container {
+    width: 496px;
+    display: block;
+    position: relative;
+    float: right;
+}
+
+.login-wrapper .bg-caption {
+    width: 500px;
+}
+
+.register-container {
+    width: 550px;
+    margin: auto;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .login-wrapper .login-container {
+        width: 100%;
+    }
+
+    .register-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .login-wrapper .login-container {
+        width: 100%;
+    }
+}
+
+.lock-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+.lock-screen-wrapper .credentials {
+    margin-top: -84px;
+    position: absolute;
+    top: 50%;
+}
+
+.lock-screen-wrapper .credentials .thumbnail-wrapper {
+    width: 53px;
+    height: 53px;
+}
+
+.lock-screen-wrapper .credentials .logged {
+    opacity: .21;
+    margin-top: -5px !important;
+}
+
+.lock-screen-wrapper .credentials .name {
+    opacity: .69;
+    margin-top: -5px !important;
+    font-size: 36px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.lock-screen-wrapper .terms-wrapper > div {
+    display: table;
+}
+
+.lock-screen-wrapper .terms-wrapper .terms {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.lock-screen-wrapper .terms-wrapper .logo-terms {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.lock-screen-wrapper .terms-wrapper .logo-terms .brand {
+    left: 50%;
+    margin-left: -21px;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+}
+
+@media (max-width: 767px) {
+    .lock-container {
+        width: 80%;
+    }
+
+    .lock-screen-wrapper .credentials form {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lock-screen-wrapper .credentials {
+        margin: 0;
+        position: static;
+        margin-top: 100px;
+        width: 100%;
+        float: left;
+        clear: both;
+    }
+
+    .lock-screen-wrapper .credentials > div {
+        text-align: center;
+    }
+
+    .lock-screen-wrapper .credentials .thumbnail-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+}
+#form-reg {
+    display: none;
+}
+
+/*require.js*/
+input[required_field_error="required_field_error"]{
+    border-color: red;
+}
+
+
+input[type=submit] {
+    position: relative;
+    width: 100%;
+    top: -19px;
+    height: 25px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+

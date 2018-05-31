@@ -1,0 +1,322 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    background-color: #34495e;
+    padding-top: 20px;
+}
+.background-img {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #34495e;
+    background-repeat: no-repeat;
+    
+
+    background-size: 100% 100%;
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s;
+    background-size: cover;
+    background-position: right;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+
+header {
+	margin-top: 30px;
+	padding-right: 20px;
+}
+.navbar-nav {
+	background-color: #fff;
+	border-radius: 8px;
+-webkit-box-shadow:0 0 11px 0 #e4e4e4;
+box-shadow: 0 0 11px 0 #e4e4e4;
+}
+.navbar-nav li:first-child a {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.navbar-nav li:last-child a{
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-right: 0;
+}
+.navbar-nav li a{
+	border-right: 1px solid #d4d7d9;
+	color: #000;
+}
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nazirlik {
+    padding-top: 0;
+    padding-left: 10px;
+    
+}
+.nazirlik img {
+    max-width: 75%;
+}
+
+.content1 {
+    flex: 1;
+}
+
+.login {
+    width: 310px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -203.5px;
+    margin-left: -155px;
+    padding-bottom: 20px;
+    /*-webkit-box-shadow: 3px -1px 53px -1px rgba(0,0,0,0.75);*/
+    /*-moz-box-shadow: 3px -1px 53px -1px rgba(0,0,0,0.75);*/
+    /*box-shadow: 3px -1px 53px -1px rgba(0,0,0,0.75);*/
+
+}
+
+.login .head {
+	text-align: center;
+	padding: 50px 20px 50px;
+	border-bottom: 1px solid #dddfe1;
+}
+.login .head img{
+    max-width: 200px;
+}
+.login .head h1{
+	font-size: 26px;
+	color: #504848;
+	font-weight: bold;
+	font-family: 'Calibri';
+}
+
+form .inputs {
+	padding: 10px 15px 0;
+	border-bottom: 1px solid #dddfe1;
+}
+
+form input{
+	border: 0;
+	border-bottom: 1px solid #dfe2e3;
+	margin-bottom: 10px;
+	width: 100%;
+	padding-left: 10px;
+	line-height: 2.5;
+	transition: all 200ms;
+}
+form input:focus{
+	outline: 0;
+	border-color: #b9bbbc;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #ccc;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #ccc;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #ccc;
+}
+
+form .recaptcha {
+	padding-bottom: 10px;
+}
+
+form button {
+	background-color: #d4d7d9;
+	border: 0;
+	border-radius: 30px;
+	text-align: center;
+	padding: 10px 0;
+	width: 180px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 65px;
+	outline: none;
+}
+
+footer {
+    margin: 135px 0 30px 50px;
+    margin: 0;
+    padding: 20px 15px;
+}
+footer .unibook-logo img {
+    /*width: 4.5%;*/
+    opacity: 0.6;
+    max-width: 217px;
+    display: inline-block;
+    
+}
+
+.error-recaptcha {
+    border: solid 1px red;
+}
+
+.forget-password {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.notify .message {
+    font-size: 16px;
+}
+
+div.notify {
+    border-radius: 0px;
+    padding: 8px 15px;
+    border: 1px solid gray;
+}
+
+.blank-required-field {
+    box-shadow: 0 0 3px rgba(255, 0, 0, .9);
+}
+.login-title{
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Calibri';
+    text-align: center;
+    position: relative;
+    top: -52px;
+}
+@media only screen and (max-width: 767px){
+    .navbar-brand{
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .navbar-brand>img{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-toggle{
+        position: absolute;
+        right: 0;
+    }
+    .navbar-toggle .icon-bar{
+        background: #fff;
+        -webkit-box-shadow: 0 0 3px 0 #404040;
+        box-shadow: 0 0 3px 0 #404040;        
+    }
+    .navbar-nav {
+        position: absolute;
+        right: 26px;
+        width: 200px;
+        margin: -13px 0 0 0;
+        border-radius: 0;
+        -webkit-box-shadow: 3px -1px 53px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px -1px 53px -1px rgba(0,0,0,0.75);
+        box-shadow: 3px -1px 53px -1px rgba(0,0,0,0.75);        
+    }
+    .navbar-collapse{
+        height: 1px !important;
+    }
+    .navbar-nav>li>a {
+        border: none;
+    }    
+    .login{
+        /*width: 280px;*/
+        /*margin: 100px auto 0;*/
+        /*position: static;*/
+    }
+    form button{
+        display: block;
+        margin: 20px auto 0;
+    }
+    footer{
+        margin: 0;
+        padding: 0 20px 20px;
+    }
+    footer .text-right.unibook-logo{
+        text-align: center !important;
+    }
+    .navbar-nav>li>a{
+        border-radius: 0 !important;
+    }
+}
+@media only screen and (max-width: 480px){
+    body{padding-top: 0;}
+    .content1{
+        flex: 0;
+    }
+    .navbar-brand>img{
+        max-width: 100px;
+    }
+    .login{
+        /*margin-top: 50px;*/
+    }
+    footer{
+        padding: 20px 20px 0;
+    }
+    footer .unibook-logo img{
+        max-width: 167px;
+    }
+    .login .head{
+        /*padding: 5px 20px 5px;*/
+    }
+    .forget-password{
+        padding-top: 10px;
+    }
+    .unibook-logo{
+        /*float: right;*/
+        margin-top: 9px;
+        margin-left: 15px;
+    }
+    .navbar-brand>img {
+        max-width: 100px;
+        margin-top: 30px;
+    }
+    .login .head{
+        margin-bottom: 40px;
+    }
+    form .inputs{
+        padding-bottom: 30px;
+    }
+    footer .unibook-logo img {
+        max-width: 167px;
+        margin: 20px auto 0;
+    }
+}
